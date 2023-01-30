@@ -1,3 +1,19 @@
+@import "~bootstrap/scss/bootstrap";
+:root {
+  --primary-clr: #d8323c;
+  --secondary-clr: #0c0e0c;
+}
+
+.dark-mode {
+  --background-clr: #1d1d1d;
+  --text-clr: #eaebea;
+}
+
+.light-mode {
+  --background-clr: #eaebea;
+  --text-clr: #0c0e0c;
+}
+
 // REMOVE ALL STYLES
 *,
 *::before,
