@@ -1,0 +1,137 @@
+.hamburger-menu {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.ham-menu-button {
+  position: relative;
+  padding: 0.4rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--secondary-clr);
+  border-radius: 0.5rem;
+  overflow: visible;
+
+  svg {
+    fill: var(--menu-text-clr);
+  }
+  .bars,
+  .close-btn {
+    width: 1.5rem;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+.menu-inactive {
+  width: 2.5rem;
+  height: 2.5rem;
+  transition: width 0.1s ease-in 0.5s, height 0.5s linear;
+}
+.menu-active {
+  width: 6rem;
+  height: 28rem;
+  transition: width 0.1s ease-in, height 0.5s linear 0.1s;
+}
+
+.ham-menu-items {
+  margin: 0.5rem;
+  text-decoration: none;
+  color: var(--text-clr);
+  visibility: hidden;
+  opacity: 0;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+// transitions settings for hamburger menu items
+.home-icon {
+  width: 2rem;
+  margin-top: 2rem;
+  transition: all 0.1s linear 0.4s;
+  &.active {
+    transition: all 0.3s linear 0.2s;
+  }
+}
+
+.about-item {
+  transition: all 0.1s linear 0.3s;
+  &.active {
+    transition: all 0.3s linear 0.3s;
+  }
+}
+
+.projects-item {
+  transition: all 0.1s linear 0.2s;
+  &.active {
+    transition: all 0.3s linear 0.4s;
+  }
+}
+
+.contact-item {
+  transition: all 0.1s linear 0.1s;
+  &.active {
+    transition: all 0.3s linear 0.5s;
+  }
+}
+
+////////
+
+.ham-menu-icons {
+  position: absolute;
+  right: -4rem;
+  width: 1.5rem;
+  transform: translateX(5rem);
+  &.active {
+    transform: translateX(-5rem);
+  }
+}
+
+// transitions settings for hamburger menu icons
+.email-icon {
+  top: 15rem;
+  transition: transform 0.3s ease-out 0.15s;
+  &.active {
+    transition: transform 0.3s ease-out 0.3s;
+  }
+}
+
+.linkedin-icon {
+  top: 18rem;
+  transition: transform 0.3s ease-out 0.1s;
+  &.active {
+    transition: transform 0.3s ease-out 0.4s;
+  }
+}
+
+.github-icon {
+  top: 21rem;
+  transition: transform 0.3s ease-out 0.05s;
+  &.active {
+    transition: transform 0.3s ease-out 0.5s;
+  }
+}
+
+.mode-switcher {
+  top: 10rem;
+  right: 0.5rem;
+  visibility: hidden;
+  opacity: 0;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s linear 0.6s;
+  }
+}
+/////////
+
+@media only screen and (min-width: 992px) {
+  .hamburger-menu {
+    display: none;
+  }
+}

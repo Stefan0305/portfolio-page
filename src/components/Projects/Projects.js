@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <div>
+    <div className="projects" id="projects">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eveniet
       nemo commodi corporis illo sapiente praesentium eius et, incidunt pariatur
       eum ipsam ducimus reiciendis suscipit eos assumenda. Atque asperiores

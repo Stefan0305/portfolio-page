@@ -6,42 +6,6 @@ main {
   .content-panel {
     padding: 3rem;
   }
-
-  .hamburger-menu {
-    position: fixed;
-    top: 1rem;
-    right: 2rem;
-    button {
-      width: 3rem;
-      height: 3rem;
-      padding: 0.5rem !important;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--secondary-clr);
-      border: none;
-      &:hover,
-      &:active,
-      &:focus {
-        background-color: var(--secondary-clr) !important;
-      }
-      svg {
-        fill: var(--menu-text-clr);
-      }
-      .close-btn {
-        width: 20px;
-      }
-
-      // opener/closer of hamburger menu
-      .bars,
-      .close-btn {
-        display: none;
-        &.active {
-          display: block;
-        }
-      }
-    }
-  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -58,10 +22,6 @@ main {
 
     .sidepanel-container {
       height: inherit;
-    }
-
-    .hamburger-menu {
-      display: none;
     }
   }
 }

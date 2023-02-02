@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div>
+    <div className="contact" id="contact">
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel quo quasi
       dolores, dolorum earum ipsa dolorem facilis laborum ullam architecto
       dolore quaerat reprehenderit amet totam? Consequatur saepe mollitia
