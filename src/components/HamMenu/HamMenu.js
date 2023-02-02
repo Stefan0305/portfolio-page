@@ -6,9 +6,9 @@ import Button from "react-bootstrap/Button";
 
 // MUI components
 import { MaterialUISwitch } from "../SidePanel/StyledSwitch";
-import EmailLink from "./EmailLink";
-import LinkedinLink from "./LinkedinLink";
-import GithubLink from "./GithubLink";
+import EmailLink from "../SocialLinks/EmailLink";
+import LinkedinLink from "../SocialLinks/LinkedinLink";
+import GithubLink from "../SocialLinks/GithubLink";
 
 export default function HamMenu(props) {
   const [hamMenuOpen, setHamMenuOpen] = useState(false);

@@ -1,5 +1,5 @@
 import React from "react";
-import "./HamMenu.scss";
+import "./SocialLinks.scss";
 
 const GithubLink = () => {
   return (
